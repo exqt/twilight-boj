@@ -1,0 +1,322 @@
+:root {
+	--black: #222222;
+	--black-darker: #181818;
+	--text: #BEBEBE;
+	--orange: #CF6A4C;
+	--orange-darker: #B35C42;
+	--white: #EEE;
+	--hover: #333;
+	--line: #444;
+}
+
+/*       */
+/* ALERT */
+/*       */
+
+.alert-success, .alert-info {
+	background-color: #16212F;
+	border-color: #224466;
+	border-radius: 4px !important;
+	color: #9daccc;
+}
+
+.alert-body>a {
+	color: #9daccc;
+	text-decoration: underline;
+}
+
+
+/*         */
+/* GENERAL */
+/*         */
+
+html, .wrapper {
+	background: var(--black);
+}
+
+body, p, h1, h2, h3, h4, h5, h6, li, oi, span {
+	color: var(--text);
+}
+
+pre {
+	background-color: var(--black-darker);
+	color: var(--text);
+	border-color: var(--line);
+}
+
+a, a>span {
+	color: var(--orange);
+}
+
+#problem-body img {
+	filter: invert(85%) hue-rotate(-180deg) brightness(125%) contrast(85%) !important;
+}
+
+.btn-u {
+	background: var(--orange);
+	background-color: var(--orange);
+}
+
+.btn-default, .btn-primary {
+	color: var(--white);
+	background-color: var(--orange);
+	border-color: var(--orange-darker);
+}
+
+::-webkit-scrollbar {
+	height: 12px;
+	width: 12px;
+	background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #333;
+}
+
+::-webkit-scrollbar-corner {
+	background: #181818;
+}
+
+.blog-twitter .blog-twitter-inner {
+	background: #181818;
+}
+
+.blog-twitter .blog-twitter-inner:after {
+	display: none;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	color: var(--white);
+	background-color: var(--orange);
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: #333;
+}
+
+.label {
+	color: var(--white);
+	font-weight: bold;
+}
+.label-success {
+	background-color: rgb(94, 154, 94);
+}
+.label-info {
+	background-color: #599eb3;
+}
+.label-primary {
+	background-color: #396b96;
+}
+span.label-light-green, span.badge-light-green {
+	background: #5fa289;
+}
+
+.form-control {
+	color: #DEDEDE;
+	background-color: #181818;
+	border-color: #525252;
+}
+
+.pagination>li>a, .pagination>li>span {
+	color: #DEDEDE;
+	background-color: #181818;
+	border: 1px solid #525252;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover {
+	background-color: #333;
+}
+
+.header .topbar ul.loginbar > li > a, .header .topbar ul.loginbar > li > a:hover, .glyphicon {
+	color: #BBB;
+}
+
+.page-header {
+	border-bottom: 1px solid var(--line);
+}
+
+/*      */
+/* MENU */
+/*      */
+
+#logo-header {
+	filter: invert(1);
+}
+
+.header .navbar-default .navbar-nav > li > a {
+	color: var(--text);
+	font-weight: bold;
+}
+
+.header .dropdown-menu {
+	border-top: solid 2px var(--orange);
+}
+
+.header, .navbar-default, .navbar-nav>li:hover>a {
+	color: var(--orange);
+	border-bottom: solid 1px var(--line);
+}
+
+.header .navbar-default .navbar-nav > .active > a {
+	border-color: var(--orange);
+}
+
+.dropdown-menu {
+	background-color: var(--black-darker);
+}
+
+.nav a > .badge {
+	border: 1px solid #525252;
+	color: #CCCCCC;
+	border-radius: 1px;
+	padding: 2px 4px 2px 4px;
+}
+span.label-red, span.badge-red {
+	background-color: #444444;
+}
+
+.nav>li>a {
+	font-weight: bold;
+	color: var(--text);
+}
+
+.dropdown-menu li a {
+	color: var(--text);
+}
+
+.header .navbar .search-open {
+	background: var(--black-darker);
+	border-top: solid 2px var(--black);
+}
+
+.header .mega-menu .equal-height-in {
+	border-left: 1px solid #333;
+}
+
+.header .navbar-default .navbar-nav > li > a, .header .navbar-default .navbar-nav > li > a:focus {
+	border-bottom: solid 2px transparent;
+}
+
+/*       */
+/* TABLE */
+/*       */
+
+.table>thead>tr>td.success, .table>tbody>tr>td.success, .table>tfoot>tr>td.success, .table>thead>tr>th.success, .table>tbody>tr>th.success, .table>tfoot>tr>th.success, .table>thead>tr.success>td, .table>tbody>tr.success>td, .table>tfoot>tr.success>td, .table>thead>tr.success>th, .table>tbody>tr.success>th, .table>tfoot>tr.success>th {
+	background-color: inherit;
+}
+
+.table>thead>tr>td.info, .table>tbody>tr>td.info, .table>tfoot>tr>td.info, .table>thead>tr>th.info, .table>tbody>tr>th.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td, .table>tbody>tr.info>td, .table>tfoot>tr.info>td, .table>thead>tr.info>th, .table>tbody>tr.info>th, .table>tfoot>tr.info>th {
+	background-color: inherit;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+	background-color: rgb(24, 24, 24);
+}
+
+.table-bordered, .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td, .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-color: #525252;
+}
+
+.table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td {
+	border-top: 0;
+}
+
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
+	background-color: var(--hover);
+}
+
+.progress {
+	background: transparent;
+}
+
+.user-legendary-first-letter {
+	color: red !important;
+}
+
+.user-admin {
+	color: var(--white) !important;
+}
+
+
+/*         */
+/* PROFILE */
+/*         */
+
+.panel-default>.panel-heading {
+	color: var(--white);
+	background-color: var(--black-darker);
+	border-color: var(--line);
+}
+
+.panel {
+	background-color: var(--black);
+	border-color: var(--line);
+}
+
+
+/*         */
+/* PROBLEM */
+/*         */
+
+.sampledata {
+	background-color: #181818;
+	border: 1px solid #525252;
+	color: #CCCCCC;
+}
+
+.headline h2, .headline h3, .headline h4 {
+	border-bottom: 2px solid #CF6A4C;
+}
+
+.headline {
+	border-bottom: 0px;
+}
+
+.btn-link, .btn-link:hover, .btn-link:focus {
+	color: #CF6A4C;
+}
+
+.breadcrumbs, .search-block-v2 {
+	background: var(--black-darker);
+	border-bottom: solid 1px #444;
+}
+
+#favorite_image {
+	color: var(--white);
+}
+
+
+/*      */
+/* BLOG */
+/*      */
+
+.funny-boxes-top-sea {
+	border-top: solid 2px #CF6A4C !important;
+}
+
+.funny-boxes {
+	background: #181818 !important;
+}
+
+
+/*          */
+/* SOLVEDAC */
+/*          */
+
+.algorithm_tag {
+	background: #16212F;
+	border: 1px solid #224466;
+	border-radius: 4px ;
+	color: #9daccc;
+}
+
+#problem_comment, .difficulty_selector {
+	background-color: #181818;
+	border: 1px solid #525252;
+	color: #CCCCCC;
+}
+
+.tagify {
+	border-color: var(--line);
+	background-color: var(--black-darker);
+}
