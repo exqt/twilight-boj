@@ -48,6 +48,10 @@ a, a>span {
 	color: var(--orange);
 }
 
+blockquote:hover, blockquote.text-right:hover {
+	border-color: var(--orange);
+}
+
 #problem-body img {
 	filter: invert(85%) hue-rotate(-180deg) brightness(125%) contrast(85%) !important;
 }
@@ -135,6 +139,15 @@ span.label-light-green, span.badge-light-green {
 	border-bottom: 1px solid var(--line);
 }
 
+.fa {
+	color: var(--text);
+}
+
+legend {
+	color: var(--text);
+	border-bottom: 1px solid var(--line);
+}
+
 /*      */
 /* MENU */
 /*      */
@@ -197,6 +210,11 @@ span.label-red, span.badge-red {
 	border-bottom: solid 2px transparent;
 }
 
+header .dropdown-menu .active > a,
+.header .dropdown-menu li > a:hover {
+	background: var(--hover) !important;
+}
+
 /*       */
 /* TABLE */
 /*       */
@@ -234,7 +252,7 @@ span.label-red, span.badge-red {
 }
 
 .user-admin {
-	color: var(--white) !important;
+	color: #DDD !important;
 }
 
 
@@ -253,6 +271,20 @@ span.label-red, span.badge-red {
 	border-color: var(--line);
 }
 
+
+/* topcoder */
+/* Orange */
+.coderTextOrange, .coderTextOrange:link, .coderTextOrange:visited, .coderTextOrange:hover, .coderTextOrange:active { color: #FF9900; }
+/* Red */
+.coderTextRed, .coderTextRed:link, .coderTextRed:visited, .coderTextRed:hover, .coderTextRed:active { color: #EE0000; }
+/* Yellow */
+.coderTextYellow, .coderTextYellow:link, .coderTextYellow:visited, .coderTextYellow:hover, .coderTextYellow:active { color: #DDCC00; }
+/* Blue */
+.coderTextBlue, .coderTextBlue:link, .coderTextBlue:visited, .coderTextBlue:hover, .coderTextBlue:active { color: #6666FF; }
+/* Green */
+.coderTextGreen, .coderTextGreen:link, .coderTextGreen:visited, .coderTextGreen:hover, .coderTextGreen:active { color: #00A900; }
+/* Gray */
+.coderTextGray, .coderTextGray:link, .coderTextGray:visited, .coderTextGray:hover, .coderTextGray:active { color: #999999; }
 
 /*         */
 /* PROBLEM */
@@ -283,6 +315,18 @@ span.label-red, span.badge-red {
 
 #favorite_image {
 	color: var(--white);
+}
+
+/*         */
+/* CONTEST */
+/*         */
+
+.list-group-item {
+	background-color: var(--black-darker);
+	border: 1px solid var(--line);
+}
+.list-group-item:hover {
+	background-color: var(--hover);
 }
 
 
