@@ -52,7 +52,7 @@ blockquote:hover, blockquote.text-right:hover {
 	border-color: var(--orange);
 }
 
-#problem-body img {
+#problem-body img:not(.level_badge) {
 	filter: invert(85%) hue-rotate(-180deg) brightness(125%) contrast(85%) !important;
 }
 
@@ -418,7 +418,6 @@ span.label-blue, span.badge-blue {
 	background-color: #f7f7f7;
 	white-space: nowrap;
 }
-.CodeMirror-linenumbers {}
 .CodeMirror-linenumber {
 	padding: 0 3px 0 5px;
 	min-width: 20px;
@@ -480,7 +479,6 @@ span.label-blue, span.badge-blue {
 }
 
 /* Can style cursor different in overwrite (non-insert) mode */
-.CodeMirror-overwrite .CodeMirror-cursor {}
 
 .cm-tab { display: inline-block; text-decoration: inherit; }
 
@@ -510,10 +508,6 @@ span.label-blue, span.badge-blue {
 .cm-s-default .cm-atom {color: #219;}
 .cm-s-default .cm-number {color: #164;}
 .cm-s-default .cm-def {color: #00f;}
-.cm-s-default .cm-variable,
-.cm-s-default .cm-punctuation,
-.cm-s-default .cm-property,
-.cm-s-default .cm-operator {}
 .cm-s-default .cm-variable-2 {color: #05a;}
 .cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
 .cm-s-default .cm-comment {color: #a50;}
@@ -662,8 +656,6 @@ flickering artifacts. */
 	z-index: 2;
 	padding: 0.1px; /* Force widget margins to stay inside of the container */
 }
-
-.CodeMirror-widget {}
 
 .CodeMirror-rtl pre { direction: rtl; }
 
