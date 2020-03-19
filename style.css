@@ -54,6 +54,12 @@ blockquote:hover, blockquote.text-right:hover {
 
 #problem-body img:not(.level_badge) {
 	filter: invert(85%) hue-rotate(-180deg) brightness(125%) contrast(85%) !important;
+	transition: 0.3s;
+}
+
+#problem-body img:not(.level_badge):hover {
+	filter: none;
+	transition: 0.3s;
 }
 
 .btn-u {
@@ -65,6 +71,10 @@ blockquote:hover, blockquote.text-right:hover {
 	color: var(--white);
 	background-color: var(--orange);
 	border-color: var(--orange-darker);
+}
+
+a.btn, a.btn-u, .btn>span {
+	color: var(--white);
 }
 
 ::-webkit-scrollbar {
@@ -146,6 +156,11 @@ span.label-light-green, span.badge-light-green {
 legend {
 	color: var(--text);
 	border-bottom: 1px solid var(--line);
+}
+
+/* MAIN */
+.blog-twitter .blog-twitter-inner:before {
+	border-bottom: 15px solid #ffffff00;
 }
 
 /*      */
@@ -386,6 +401,21 @@ span.label-blue, span.badge-blue {
 	background-color: var(--black-darker);
 }
 
+.reg-page {
+	color: var(--text);
+	padding: 30px;
+	background: var(--black-darker);
+	border: solid 1px var(--line);
+}
+
+.reg-header {
+	color: var(--text);
+	border-bottom: solid 1px var(--line);
+}
+
+.reg-page .img-responsive {
+	filter: invert(100%) hue-rotate(180deg);
+}
 
 /* code mirror */
 /* BASICS */
@@ -542,7 +572,8 @@ the editor. You probably shouldn't touch them. */
 .CodeMirror {
 	position: relative;
 	overflow: hidden;
-	background: white;
+	background: var(--black);
+	border: 1px solid var(--line);
 }
 
 .CodeMirror-scroll {
@@ -873,4 +904,19 @@ span.CodeMirror-selectedtext { background: none; }
 
 .redactor-box.redactor-styles-on {
 	border: 1px solid var(--line);
+}
+
+#problem-memo-edit .editor-toolbar a {
+	color: var(--text);
+}
+
+.editor-toolbar {
+	border-top: 1px solid var(--line);
+	border-left: 1px solid var(--line);
+	border-right: 1px solid var(--line);
+	opacity: 1.0;
+}
+
+.editor-toolbar:hover, .editor-wrapper input.title:focus, .editor-wrapper input.title:hover {
+	opacity: 1.0;
 }
