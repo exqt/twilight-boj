@@ -30,11 +30,26 @@
 /* GENERAL */
 /*         */
 
+.problem-text div {
+	background-color: var(--black);
+}
+
+.chosen-drop, .chosen-results, .no-results {
+	background-color: var(--black-darker) !important;
+	border-color: var(--black);
+}
+
+.chosen-single {
+	background: linear-gradient(var(--black) 50%, var(--black-darker) 100%);
+	border-color: var(--black);
+	box-shadow: none;
+}
+
 html, .wrapper {
 	background: var(--black);
 }
 
-body, p, h1, h2, h3, h4, h5, h6, li, oi, span {
+body, p, h1, h2, h3, h4, h5, h6, li, oi {
 	color: var(--text);
 }
 
@@ -158,6 +173,26 @@ legend {
 	border-bottom: 1px solid var(--line);
 }
 
+.problem-label-spj {
+	background-color: #5981a1;
+}
+
+.problem-label-func {
+    background-color: rgb(73 130 135);
+}
+
+.problem-label-interactive {
+    background-color: rgb(66 173 183);
+}
+
+.problem-label-two-steps {
+    background-color: #5c9ba1;
+}
+span.problem-label-partial {
+    background-color: #68929f;
+}
+
+
 /* MAIN */
 .blog-twitter .blog-twitter-inner:before {
 	border-bottom: 15px solid #ffffff00;
@@ -176,8 +211,12 @@ legend {
 	font-weight: bold;
 }
 
-.header .dropdown-menu {
-	border-top: solid 2px var(--orange);
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: var(--hover);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--line);	
 }
 
 .header, .navbar-default, .navbar-nav>li:hover>a {
@@ -228,6 +267,20 @@ span.label-red, span.badge-red {
 header .dropdown-menu .active > a,
 .header .dropdown-menu li > a:hover {
 	background: var(--hover) !important;
+}
+
+.sky-form {
+    border: 1px solid var(--line);
+	background-color: var(--black-darker);
+}
+
+.sky-form * {
+	background-color: var(--black-darker);
+	color: var(--text);
+}
+
+.header .dropdown-menu {
+    border-top: solid 2px var(--orange);
 }
 
 /*       */
@@ -291,6 +344,11 @@ header .dropdown-menu .active > a,
 	border-color: var(--line);
 }
 
+.tab-v2 .nav-tabs li.active a {
+    background: var(--black-darker);
+    border: solid 1px var(--line);
+}
+
 
 /* topcoder */
 /* Orange */
@@ -305,6 +363,16 @@ header .dropdown-menu .active > a,
 .coderTextGreen, .coderTextGreen:link, .coderTextGreen:visited, .coderTextGreen:hover, .coderTextGreen:active { color: #00A900; }
 /* Gray */
 .coderTextGray, .coderTextGray:link, .coderTextGray:visited, .coderTextGray:hover, .coderTextGray:active { color: #999999; }
+
+/* codeforces */
+
+.user-blue, .atcoder-blue {
+    color: #4545ff !important;
+}
+
+
+
+
 
 /*         */
 /* PROBLEM */
@@ -352,6 +420,53 @@ span.label-blue, span.badge-blue {
 	font-weight: bold;
 }
 
+.ibox-content {
+    background-color: var(--black-darker);
+    border: none;
+}
+
+.white-bg {
+    background-color: var(--black);
+}
+.border-bottom {
+    border-bottom: 1px solid #e7eaec!important;
+}
+
+.gray-bg {
+    background-color: var(--black);
+}
+
+.widget h2, .navbar-brand {
+	color: var(--white);
+}
+
+.navbar-static-top .navbar-brand {
+	background-color: var(--black);
+}
+
+.navbar.navbar-static-top {
+    background-color: var(--black-darker);	
+}
+
+.row.border-bottom.white-bg {
+	border-bottom: none;
+}
+
+#right-sidebar {
+    background-color: var(--black-darker);
+    border-left: 1px solid var(--line);
+    border-top: 1px solid var(--line);
+}
+
+.sidebar-container ul.sidebar-list li, .sidebar-title {
+    border-bottom: 1px solid var(--line);
+}
+
+.footer {
+    background: var(--black-darker);
+    border-top: none;
+}
+
 
 /*      */
 /* BLOG */
@@ -379,43 +494,7 @@ span.label-blue, span.badge-blue {
 }
 
 
-/*          */
-/* SOLVEDAC */
-/*          */
 
-.algorithm_tag {
-	background: #16212F;
-	border: 1px solid #224466;
-	border-radius: 4px ;
-	color: #9daccc;
-}
-
-#problem_comment, .difficulty_selector {
-	background-color: #181818;
-	border: 1px solid #525252;
-	color: #CCCCCC;
-}
-
-.tagify {
-	border-color: var(--line);
-	background-color: var(--black-darker);
-}
-
-.reg-page {
-	color: var(--text);
-	padding: 30px;
-	background: var(--black-darker);
-	border: solid 1px var(--line);
-}
-
-.reg-header {
-	color: var(--text);
-	border-bottom: solid 1px var(--line);
-}
-
-.reg-page .img-responsive {
-	filter: invert(100%) hue-rotate(180deg);
-}
 
 /* code mirror */
 /* BASICS */
